@@ -3,6 +3,8 @@ const loginWarning = () => {
   alert("This website is a clone of the official Discord website (www.discord.com) and is created solely for educational and demonstration purposes. It is not affiliated with or endorsed by Discord or its parent company.")
 }
 
+window.loginWarning = loginWarning;
+
 // Scroll effect for the different sections of the page
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -22,4 +24,4 @@ const show = () => {
   document.body.classList.toggle('lock-scroll')
 }
 
-
+window.show = show;
